@@ -32,7 +32,11 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testAnnotationProcessor 'org.projectlombok:lombok'
-    implementation 'org.hibernate.orm:hibernate-community-dialects:6.6.4.Final'
+    implementation 'org.hibernate.orm:hibernate-community-dialects'
+    implementation 'org.jsoup:jsoup:1.18.1'
+    implementation 'io.github.cdimascio:dotenv-java:3.2.0'
+    implementation 'com.anthropic:anthropic-java:2.40.1'
+    implementation 'jakarta.inject:jakarta.inject-api:2.0.1'
 }
 
 tasks.named('test') {
